@@ -1,0 +1,87 @@
+/* Background & fonts */
+body {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Container styling */
+.container {
+    background: rgba(0,0,0,0.6);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+/* Input box */
+#password {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    max-width: 400px;
+    font-size: 1rem;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+#password:focus {
+    outline: none;
+    box-shadow: 0 0 10px #fff;
+    transform: scale(1.02);
+}
+
+/* Button */
+#checkBtn {
+    margin-top: 15px;
+    padding: 10px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#checkBtn:hover {
+    background: #ffb347;
+    transform: scale(1.05);
+    color: #000;
+}
+
+/* Result text */
+#result h4 {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* Strength colors */
+.weak {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+.moderate {
+    background-color: #ffa500;
+    color: #fff;
+}
+
+.strong {
+    background-color: #4caf50;
+    color: #fff;
+}
